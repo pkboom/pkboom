@@ -22,12 +22,12 @@ jobs:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: node build-svg.js
 
-      # - name: Commit changes
-      #   uses: EndBug/add-and-commit@v4
-      #   with:
-      #     author_name: Keunbae Park
-      #     author_email: ppotpo@gmail.com
-      #     message: "Auto updating my readme"
-      #     add: "*.svg"
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: Keunbae Park
+          author_email: ppotpo@gmail.com
+          message: 'Auto updating my readme'
+          add: '*.svg'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -319,9 +319,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="350" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I'm a fullstack web developer.</text>
-    <text x="15" y="50">I use Laravel, tailwindcss, inertiajs, vue.</text>
+    <rect width="{netflixLength}" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">{topFilm}</text>
+    <text x="15" y="50">{topTv}</text>
   </g>
 
   <!-- typing 4 -->

@@ -293,10 +293,11 @@
 
   <!-- From Ancaster... -->
   <g transform="translate(10, 48)" class="msg-2">
-    <rect width="450" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I live in Ancaster, ON, Canada.</text>
-    <text x="15" y="50">It's {degC}°C ({degF}°F), feeling like {feelsLike}°C and {description}.</text>
-    <image x="185" y="28" width="32" height="32" href="{icon}" />
+    <rect width="410" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">I live in Ancaster, ON, Canada. It's {degC}°C ({degF}°F),</text>
+    <text x="15" y="50">feeling like {feelsLike}°C and </text>
+    <image x="180" y="28" width="32" height="32" href="{icon}" />
+    <text x="210" y="50">({description}).</text>
   </g>
 
   <!-- typing 3 -->
@@ -318,7 +319,7 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="400" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="350" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I'm a fullstack web developer.</text>
     <text x="15" y="50">I use Laravel, tailwindcss, inertiajs, vue.</text>
   </g>
@@ -343,7 +344,7 @@
 
   <!-- Twitter -->
   <g transform="translate(10, 192)" class="msg-4">
-    <rect width="444" height="42" rx="18.0355" class="bubble" />
+    <rect width="450" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">
       Inspired by
       <a xlink:href="https://github.com/jasonlong/jasonlong">https://github.com/jasonlong/jasonlong</a>
@@ -370,7 +371,7 @@
 
   <!-- Thanks -->
   <g transform="translate(10, 240)" class="msg-5">
-    <rect width="225" height="42" rx="18.0355" class="bubble" />
+    <rect width="220" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">Thanks for stopping by</text>
   </g>
 
@@ -393,7 +394,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 288)" class="msg-6">
-    <rect width="169" height="42" rx="18.0355" class="bubble" />
+    <rect width="200" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">Have a great day! <tspan class="emoji">👋</tspan></text>
   </g>
 </svg>

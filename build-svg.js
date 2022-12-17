@@ -17,7 +17,6 @@ let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=
       responseType: 'json',
     })
 
-    console.log(body)
     const degC = Math.round(body.main.temp)
     const degF = Math.round(degC * 1.8 + 32)
     const feelsLike = Math.round(body.main.feels_like)

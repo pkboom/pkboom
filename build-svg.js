@@ -1,3 +1,4 @@
+// https://home.openweathermap.org/api_keys
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 
 let fs = require('fs')
@@ -22,13 +23,8 @@ let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=
     const degC = Math.round(body.main.temp)
     const degF = Math.round(degC * 1.8 + 32)
     const feelsLike = Math.round(body.main.feels_like)
-    const description = body.weather[0].description
 
-    const response = await got(`http://openweathermap.org/img/wn/${body.weather[0].icon}@2x.png`, {
-      responseType: 'buffer',
-    })
-
-    let icon = 'data:' + response.headers['content-type'] + ';base64,' + Buffer.from(response.body).toString('base64')
+    const icons = await got('https://raw.githubusercontent.com/pkboom/OpenWeather-icons/master/icons.json').json()
 
     const { body: filmBody } = await got('https://top10.netflix.com/films')
 
@@ -56,8 +52,7 @@ let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=
       data = data.replace('{degF}', degF)
       data = data.replace('{degC}', degC)
       data = data.replace('{feelsLike}', feelsLike)
-      data = data.replace('{description}', description)
-      data = data.replace('{icon}', icon)
+      data = data.replace('{icon}', icons[body.weather[0].icon])
       data = data.replace('{todayDay}', todayDay)
       data = data.replace('{topFilm}', topFilm)
       data = data.replace('{topTv}', topTv)

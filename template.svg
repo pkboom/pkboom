@@ -346,8 +346,7 @@
   <g transform="translate(10, 192)" class="msg-4">
     <rect width="450" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">
-      Inspired by
-      <a xlink:href="https://github.com/jasonlong/jasonlong">https://github.com/jasonlong/jasonlong</a>
+      I'm a fullstack web developer.
     </text>
   </g>
 

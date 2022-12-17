@@ -1,4 +1,4 @@
-name: Update readme
+name: Update weather
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  readme:
+  weather:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,7 @@ jobs:
           node-version: 14
       - run: npm install
 
-      - name: Generate readme
+      - name: Update weather
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: node build-svg.js
@@ -27,7 +27,7 @@ jobs:
         with:
           author_name: Keunbae Park
           author_email: ppotpo@gmail.com
-          message: 'Auto updating my readme'
+          message: 'Auto updating weather'
           add: '*.svg'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

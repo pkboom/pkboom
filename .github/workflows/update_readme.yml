@@ -30,15 +30,8 @@ jobs:
           format: YYYY/MM/DD HH:mm
           utcOffset: '-05:00'
 
-      # - name: Use current time
-      #   env:
-      #     F_TIME: '${{ steps.current-time.outputs.formattedTime }}'
-      #   run: echo $F_TIME
-
       - uses: EndBug/add-and-commit@v9
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           default_author: github_actions
-          message: 'update chat.svg ${{ steps.current-time.outputs.formattedTime }}'
+          message: 'update chat.svg (${{ steps.current-time.outputs.formattedTime }})'
           add: '*.svg'

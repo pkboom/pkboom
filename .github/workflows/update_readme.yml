@@ -41,5 +41,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           default_author: github_actions
-          message: 'update chat.svg' $F_TIME
+          message: 'update chat.svg $F_TIME'
           add: '*.svg'

@@ -10,23 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 14
-      - run: npm install
+          node-version: 16
+      - run: npm ci
 
       - name: Update svg
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: node build-svg.js
 
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v4
+      - uses: EndBug/add-and-commit@v9
         with:
-          author_name: Keunbae Park
-          author_email: ppotpo@gmail.com
+          default_author: github_actions
           message: 'Auto updating readme'
           add: '*.svg'
         env:

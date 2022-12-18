@@ -33,14 +33,13 @@ jobs:
       - name: Use current time
         env:
           F_TIME: '${{ steps.current-time.outputs.formattedTime }}'
-          YEAR: '${{ steps.current-time.outputs.year }}'
-          DAY: '${{ steps.current-time.outputs.day }}'
-        run: echo $F_TIME $YEAR $DAY
+        run: echo $F_TIME
 
       - uses: EndBug/add-and-commit@v9
+        env:
+          F_TIME: '${{ steps.current-time.outputs.formattedTime }}'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           default_author: github_actions
-          message: 'update chat.svg'
+          message: 'update chat.svg' $F_TIME
           add: '*.svg'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

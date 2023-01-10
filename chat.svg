@@ -295,7 +295,7 @@
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="410" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I live in Ancaster, ON, Canada. It's 0°C (32°F),</text>
-    <text x="15" y="50">feeling like -5°C and ☁️.</text>
+    <text x="15" y="50">feeling like -2°C and ☁️.</text>
   </g>
 
   <!-- typing 3 -->
@@ -319,7 +319,7 @@
   <g transform="translate(10, 120)" class="msg-3">
     <rect width="495" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">Netflix top film is "Glass Onion: A Knives Out Mystery"</text>
-    <text x="15" y="50">and top tv show is "Wednesday: Season 1".</text>
+    <text x="15" y="50">and top tv show is "Ginny & Georgia: Season 2".</text>
   </g>
 
   <!-- typing 4 -->

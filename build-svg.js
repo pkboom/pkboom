@@ -58,9 +58,9 @@ const escape = (chr) => {
       data = data.replace('{feelsLike}', feelsLike)
       data = data.replace('{icon}', icons[body.weather[0].icon])
       data = data.replace('{todayDay}', todayDay)
-      data = data.replace('{topFilm}', topFilm)
+      data = data.replace('{topFilm}', escape(topFilm))
       data = data.replace('{topTv}', escape(topTv))
-      data = data.replace('{netflixLength}', Math.max(topFilm.length, topTv.length) * 9)
+      data = data.replace('{netflixLength}', Math.max(escape(topFilm).length, escape(topTv).length) * 9)
       data = fs.writeFile('chat.svg', data, (err) => {
         if (err) {
           console.error(err)

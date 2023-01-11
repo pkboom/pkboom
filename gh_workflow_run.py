@@ -6,7 +6,7 @@ command = "gh workflow run update_readme.yml"
 
 os.system(command)
 
-time.sleep(1)
+time.sleep(2)
 
 command = "gh run list --workflow=update_readme.yml --limit 1 --json status --jq '.[0].status'"
 

@@ -60,8 +60,8 @@ const escape = (chr) => {
       data = data.replace('{todayDay}', todayDay)
       data = data.replace('{topFilm}', escape(topFilm))
       data = data.replace('{topTv}', escape(topTv))
-      data = data.replace('{netflixLength}', Math.max(escape(topFilm).length, escape(topTv).length) * 9)
-      data = fs.writeFile('chat.svg', data, (err) => {
+      data = data.replace('{netflixLength}', Math.max(topFilm.length, topTv.length) * 9)
+      data = fs.writeFile('chat2.svg', data, (err) => {
         if (err) {
           console.error(err)
           return

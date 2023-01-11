@@ -13,6 +13,10 @@ const todayDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(to
 let WEATHER_DOMAIN = 'http://api.openweathermap.org'
 let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=metric`
 
+const escape = (chr) => {
+  return chr.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+}
+
 ;(async () => {
   try {
     const { body } = await got(url, {
@@ -55,7 +59,7 @@ let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=
       data = data.replace('{icon}', icons[body.weather[0].icon])
       data = data.replace('{todayDay}', todayDay)
       data = data.replace('{topFilm}', topFilm)
-      data = data.replace('{topTv}', topTv)
+      data = data.replace('{topTv}', escape(topTv))
       data = data.replace('{netflixLength}', Math.max(topFilm.length, topTv.length) * 9)
       data = fs.writeFile('chat.svg', data, (err) => {
         if (err) {

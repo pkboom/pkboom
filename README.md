@@ -1,1 +1,1 @@
-[![Netflix](https://raw.githubusercontent.com/pkboom/pkboom/master/chat.svg)](https://top10.netflix.com/films)
+[![](https://raw.githubusercontent.com/pkboom/pkboom/master/chat.svg)](https://top10.netflix.com/films)

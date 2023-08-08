@@ -317,9 +317,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="387" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="450" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">Netflix top film is &quot;Hidden Strike&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;The Witcher: Season 3&quot;.</text>
+    <text x="15" y="50">and top tv show is &quot;The Lincoln Lawyer: Season 2&quot;.</text>
   </g>
 
   <!-- typing 4 -->

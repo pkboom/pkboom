@@ -317,8 +317,8 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="414" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Netflix top film is &quot;Lift&quot;</text>
+    <rect width="423" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Netflix top film is &quot;The Greatest Night in Pop&quot;</text>
     <text x="15" y="50">and top tv show is &quot;Griselda: Limited Series&quot;.</text>
   </g>
 

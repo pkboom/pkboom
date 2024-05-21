@@ -294,8 +294,8 @@
   <!-- From Ancaster... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="410" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I live in Ancaster, ON, Canada. It's 27°C (81°F),</text>
-    <text x="15" y="50">feeling like 27°C and ☁️.</text>
+    <text x="15" y="27">I live in Ancaster, ON, Canada. It's 28°C (82°F),</text>
+    <text x="15" y="50">feeling like 29°C and ☁️.</text>
   </g>
 
   <!-- typing 3 -->
@@ -317,9 +317,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="396" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="378" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">Netflix top film is &quot;Mother of the Bride&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;The Roast of Tom Brady&quot;.</text>
+    <text x="15" y="50">and top tv show is &quot;Bridgerton: Season 3&quot;.</text>
   </g>
 
   <!-- typing 4 -->

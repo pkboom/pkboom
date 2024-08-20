@@ -317,9 +317,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="594" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Netflix top film is &quot;Saving Bikini Bottom: The Sandy Cheeks Movie&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;A Good Girl&#039;s Guide to Murder: Season 1&quot;.</text>
+    <rect width="414" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Netflix top film is &quot;The Union&quot;</text>
+    <text x="15" y="50">and top tv show is &quot;Emily in Paris: Season 4&quot;.</text>
   </g>
 
   <!-- typing 4 -->

@@ -317,9 +317,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="576" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Netflix top film is &quot;Rebel Ridge&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;Monsters: The Lyle and Erik Menendez Story&quot;.</text>
+    <rect width="585" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Netflix top film is &quot;Miss Peregrine&#039;s Home for Peculiar Children&quot;</text>
+    <text x="15" y="50">and top tv show is &quot;Nobody Wants This: Season 1&quot;.</text>
   </g>
 
   <!-- typing 4 -->

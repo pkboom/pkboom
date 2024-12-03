@@ -317,9 +317,9 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="459" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Netflix top film is &quot;The Merry Gentlemen&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;A Man on the Inside: Season 1&quot;.</text>
+    <rect width="621" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Netflix top film is &quot;Our Little Secret&quot;</text>
+    <text x="15" y="50">and top tv show is &quot;Cold Case: Who Killed JonBenét Ramsey: Season 1&quot;.</text>
   </g>
 
   <!-- typing 4 -->

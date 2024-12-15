@@ -13,8 +13,6 @@ const todayDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(to
 let WEATHER_DOMAIN = 'http://api.openweathermap.org'
 let url = `data/2.5/weather?q=Ancaster,ON,Canada&APPID=${WEATHER_API_KEY}&units=metric`
 
-console.log(url)
-
 const escape = (chr) => {
   return chr.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;')
 }

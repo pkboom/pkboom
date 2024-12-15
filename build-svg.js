@@ -32,23 +32,23 @@ const escape = (chr) => {
 
     const icons = await got('https://raw.githubusercontent.com/pkboom/OpenWeather-icons/master/icons.json').json()
 
-    const { body: filmBody } = await got('https://top10.netflix.com/films')
+    // const { body: filmBody } = await got('https://top10.netflix.com/films')
 
-    let dom = new JSDOM(filmBody, {
-      url: 'https://top10.netflix.com/films',
-      contentType: 'text/html',
-    })
+    // let dom = new JSDOM(filmBody, {
+    //   url: 'https://top10.netflix.com/films',
+    //   contentType: 'text/html',
+    // })
 
-    const topFilm = `Netflix top film is "${dom.window.document.querySelector('.list-table tbody tr td:nth-child(2)').textContent}"`
+    // const topFilm = `Netflix top film is "${dom.window.document.querySelector('.list-table tbody tr td:nth-child(2)').textContent}"`
 
-    const { body: tvBody } = await got('https://top10.netflix.com/tv')
+    // const { body: tvBody } = await got('https://top10.netflix.com/tv')
 
-    dom = new JSDOM(tvBody, {
-      url: 'https://top10.netflix.com/tv',
-      contentType: 'text/html',
-    })
+    // dom = new JSDOM(tvBody, {
+    //   url: 'https://top10.netflix.com/tv',
+    //   contentType: 'text/html',
+    // })
 
-    const topTv = `and top tv show is "${dom.window.document.querySelector('.list-table tbody tr td:nth-child(2)').textContent}".`
+    // const topTv = `and top tv show is "${dom.window.document.querySelector('.list-table tbody tr td:nth-child(2)').textContent}".`
 
     fs.readFile('template.svg', 'utf-8', (error, data) => {
       if (error) {
@@ -60,9 +60,6 @@ const escape = (chr) => {
       data = data.replace('{feelsLike}', feelsLike)
       data = data.replace('{icon}', icons[body.weather[0].icon])
       data = data.replace('{todayDay}', todayDay)
-      data = data.replace('{topFilm}', escape(topFilm))
-      data = data.replace('{topTv}', escape(topTv))
-      data = data.replace('{netflixLength}', Math.max(topFilm.length, topTv.length) * 9)
       data = fs.writeFile('chat.svg', data, (err) => {
         if (err) {
           console.error(err)

@@ -315,6 +315,13 @@
     </circle>
   </g>
 
+  <!-- Work ... -->
+  <g transform="translate(10, 120)" class="msg-3">
+    <rect width="{netflixLength}" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="15" y="27">{topFilm}</text>
+    <text x="15" y="50">{topTv}</text>
+  </g>
+
   <!-- typing 4 -->
   <g transform="translate(10, 192)" class="typing-4">
     <rect x="8.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
@@ -337,7 +344,7 @@
   <g transform="translate(10, 192)" class="msg-4">
     <rect width="290" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">
-      I'm a software engineer.
+      I'm a fullstack web developer.
     </text>
   </g>
 

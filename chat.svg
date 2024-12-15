@@ -294,8 +294,8 @@
   <!-- From Ancaster... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="410" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I live in Ancaster, ON, Canada. It's -2°C (28°F),</text>
-    <text x="15" y="50">feeling like -9°C and ☁️.</text>
+    <text x="15" y="27">I live in Ancaster, ON, Canada. It's 0°C (32°F),</text>
+    <text x="15" y="50">feeling like -5°C and ❄️.</text>
   </g>
 
   <!-- typing 3 -->
@@ -313,13 +313,6 @@
     <circle cx="58.2054" cy="20.9773" r="5.02275" fill="#999999">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" begin="0.4s" repeatCount="indefinite" />
     </circle>
-  </g>
-
-  <!-- Work ... -->
-  <g transform="translate(10, 120)" class="msg-3">
-    <rect width="621" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Netflix top film is &quot;Our Little Secret&quot;</text>
-    <text x="15" y="50">and top tv show is &quot;Cold Case: Who Killed JonBenét Ramsey: Season 1&quot;.</text>
   </g>
 
   <!-- typing 4 -->

@@ -294,7 +294,7 @@
   <!-- From Ancaster... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="410" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I live in Ancaster, ON, Canada. It's -3°C (27°F),</text>
+    <text x="15" y="27">I live in Ancaster, ON, Canada. It's -2°C (28°F),</text>
     <text x="15" y="50">feeling like -9°C and ☁️.</text>
   </g>
 
